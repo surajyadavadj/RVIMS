@@ -1,0 +1,13 @@
+idf_component_register(
+    SRCS
+        "app_main.c"
+        "app_camera.c"
+        "app_wifi_task.c"
+    INCLUDE_DIRS
+        "."
+    REQUIRES
+        camera_hal    
+        esp_camera
+        esp_wifi
+        wifi_hal
+)
